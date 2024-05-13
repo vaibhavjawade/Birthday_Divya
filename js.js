@@ -7,6 +7,7 @@ let arr = ["❤️❤️ Wish You A Very Happy Birthday Divya ❤️❤️",
     "On your birthday, I want you to know how much you mean to me. You're not just my fiancée, but my best friend and partner in everything. Here's to another year of love, laughter, and endless adventures together. Happy Birthday!",
     "To the woman who stole my heart and continues to enchant me every day, Happy Birthday! Your beauty, grace, and kindness inspire me endlessly. I'm so grateful to have you in my life.",
     "Thankyou for Choosing me as Your life Patner.... I Still remember the day when we all are waiting for your fathers call for Acceptance Our Proposel",
+    "Since the day of baithak to the last breath of my life i am yours.....FOREVER",
     "I Love you So So So So So So So So So So So So So So So So So Much Finger",
     "Wishing You Once Again Happy Birthday Wife."
 ]
@@ -16,7 +17,7 @@ function previous() {
     i--
     if (arr[i] !== undefined) {
         let num = Math.floor(Math.random() * 9) + 1;
-        document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
+        // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
         ele.className = 'move-up'
         ele.innerText = arr[i]
         setTimeout(() => {
@@ -25,14 +26,13 @@ function previous() {
     } else {
         i++
     }
-    navigator.vibrate(1000)
 }
 
 function next() {
     i++
     if (arr[i] !== undefined) {
         let num = Math.floor(Math.random() * 9) + 1;
-        document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
+        // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
         ele.className = 'move-down'
         ele.innerText = arr[i]
         setTimeout(() => {
@@ -206,11 +206,10 @@ function next() {
 
             })()
     }
-    navigator.vibrate(1000)
 }
 
 (() => {
     // let num = Math.floor(Math.random() * 9) + 1;
-    document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${8}.jpg)`;
+    // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${8}.jpg)`;
     ele.innerText = arr[i]
 })()
