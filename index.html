@@ -23,10 +23,10 @@
         .body {
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-attachment: fixed;
-            height: 100%;
-            width: 100%;
+            height: auto;
+            width: auto;
             margin: 0;
             /* background: #020202; */
             cursor: crosshair;
@@ -34,19 +34,24 @@
 
         #textAdd{
             color: #fff;
+            text-transform: capitalize;
+            text-align: center;
+            text-shadow: 3px 3px 3px black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
         }
         /* canvas {
             display: block
         } */
 
-        h1 {
+        #birth {
             position: absolute;
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
             font-family: "Source Sans Pro";
-            font-size: 5em;
+            font-size: 3em;
             font-weight: 900;
             -webkit-user-select: none;
             user-select: none;
@@ -85,6 +90,12 @@
                 opacity: 1;
             }
         }
+        #birthday{
+                display: none;
+        }
+        #birth{
+                display: none;
+            }
     </style>
 </head>
 
@@ -92,7 +103,8 @@
     <div class="d-flex flex-row text-center align-items-center justify-content-between h-100vh">
         <button class="btn btn-success" onclick="previous()">Previous</button>
         <h3 id="textAdd"></h3>
-        <!-- <canvas id="birthday"></canvas> -->
+        <h3 id="birth">Happy Birthday Divya.........</h3>
+        <canvas id="birthday"></canvas>
         <button class="btn btn-success" onclick="next()">Next</button>
     </div>
 </body>
