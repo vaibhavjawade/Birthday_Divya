@@ -17,7 +17,7 @@ function previous() {
     i--
     if (arr[i] !== undefined) {
         let num = Math.floor(Math.random() * 9) + 1;
-        // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
+        document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
         ele.className = 'move-up'
         ele.innerText = arr[i]
         setTimeout(() => {
@@ -32,7 +32,7 @@ function next() {
     i++
     if (arr[i] !== undefined) {
         let num = Math.floor(Math.random() * 9) + 1;
-        // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
+        document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${num}.jpg)`;
         ele.className = 'move-down'
         ele.innerText = arr[i]
         setTimeout(() => {
@@ -210,6 +210,6 @@ function next() {
 
 (() => {
     // let num = Math.floor(Math.random() * 9) + 1;
-    // document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${8}.jpg)`;
+    document.getElementsByClassName('body')[0].style.backgroundImage = `url(./asset/${8}.jpg)`;
     ele.innerText = arr[i]
 })()
